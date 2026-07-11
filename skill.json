@@ -1,34 +1,27 @@
 {
   "name": "genpark-competitor-ad-creative-parser-skill",
   "version": "1.0.0",
-  "description": "GenPark AI Agent Skill - Scan competitor ad text keywords and visual placements to compile brand counter-pitching strategies.",
+  "description": "GenPark AI Agent Skill - Rival ad analyzer and counter-copy compiler.",
   "author": "genpark",
   "category": "marketing",
   "tags": [
-    "competitor-ad",
-    "marketing",
-    "hooks",
-    "branding",
-    "copywriting"
+    "competitor",
+    "creative"
   ],
   "inputs": {
     "ad_copy_sample": {
-      "type": "string",
-      "description": "Competitor display copy."
+      "type": "string"
     },
     "ad_platform": {
-      "type": "string",
-      "description": "Platform target (Meta, Google, YouTube)."
+      "type": "string"
     }
   },
   "outputs": {
     "pitch_hook": {
-      "type": "string",
-      "description": "Target hook angle identified."
+      "type": "string"
     },
     "counter_copy": {
-      "type": "string",
-      "description": "Brand copy pitch recommendations."
+      "type": "string"
     }
   },
   "entrypoint": "client.py",
